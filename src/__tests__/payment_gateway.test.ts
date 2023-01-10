@@ -1,6 +1,6 @@
-import { PaymentMethodType, PaymentRequest, Providers } from '../../src/types';
-import PaymentGateway from '../../src/payment_gateway';
+import { PaymentGateway } from '../../src/payment_gateway';
 import { StripeProvider } from '../../src/providers';
+import { PaymentMethodType, PaymentRequest, Providers } from '../../src/types';
 
 jest.mock('../providers/stripe');
 

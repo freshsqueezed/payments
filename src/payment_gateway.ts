@@ -11,7 +11,7 @@ export interface Gateway {
   processPayment(paymentRequest: PaymentRequest): Promise<PaymentResponse>;
 }
 
-export default class PaymentGateway implements Gateway {
+export class PaymentGateway implements Gateway {
   stripeProvider: StripeProvider | undefined;
 
   constructor({ stripe }: PaymentProviders) {
