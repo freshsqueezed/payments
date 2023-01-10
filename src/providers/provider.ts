@@ -1,5 +1,4 @@
-import type { PaymentResponse } from '../../src/types';
-import type { PaymentRequest } from '../../src/types';
+import type { PaymentRequest, PaymentResponse } from '../../src/types';
 
 export interface Provider {
   processCreditCardPayment(request: PaymentRequest): Promise<PaymentResponse>;
