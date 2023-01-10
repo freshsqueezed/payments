@@ -1,17 +1,17 @@
 {
-  "name": "typescript-repo-template",
+  "name": "@freshsqueezed/payments",
   "private": true,
-  "description": "A template for TypeScript projects with pre-configured tooling",
+  "description": "A universal payment gateway for node.js projects.",
   "version": "0.0.0",
   "author": "Lemonade Tech <oss@lemonade.tech>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/freshsqueezed/typescript-repo-template"
+    "url": "https://github.com/freshsqueezed/payments"
   },
-  "homepage": "https://github.com/freshsqueezed/typescript-repo-template#readme",
+  "homepage": "https://github.com/freshsqueezed/payments#readme",
   "bugs": {
-    "url": "https://github.com/freshsqueezed/typescript-repo-template/issues"
+    "url": "https://github.com/freshsqueezed/payments/issues"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
