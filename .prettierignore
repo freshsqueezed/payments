@@ -1,0 +1,9 @@
+ lines (6 sloc)  41 Bytes
+*.json
+*.json5
+*.yml
+*.md
+
+dist/
+
+.volta
