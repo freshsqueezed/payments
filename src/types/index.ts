@@ -9,3 +9,6 @@ export type Provider = Providers;
 export interface PaymentProviders {
   stripe: StripeProvider;
 }
+
+export interface PaymentRequest {}
+export interface PaymentResponse {}
