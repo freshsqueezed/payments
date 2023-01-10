@@ -21,7 +21,7 @@ export default class PaymentGateway implements Gateway {
   ): Promise<PaymentResponse> {
     switch (provider) {
       case 'stripe':
-        return this.stripeProvider.processPayment(paymentRequest);
+        return this.stripeProvider.processCreditCardPayment(paymentRequest);
       default:
         throw new Error('Invalid payment provider.');
     }
