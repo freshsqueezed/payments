@@ -2,10 +2,7 @@ import type StripeProvider from './providers/stripe';
 import { PaymentRequest, PaymentResponse, Providers } from './types';
 
 export interface Gateway {
-  processPayment(
-    provider: Providers,
-    paymentRequest: PaymentRequest,
-  ): Promise<PaymentResponse>;
+  processPayment(paymentRequest: PaymentRequest): Promise<PaymentResponse>;
 }
 
 export default class PaymentGateway implements Gateway {
@@ -16,10 +13,9 @@ export default class PaymentGateway implements Gateway {
   }
 
   async processPayment(
-    provider: Providers,
     paymentRequest: PaymentRequest,
   ): Promise<PaymentResponse> {
-    switch (provider) {
+    switch (paymentRequest.provider) {
       case Providers.STRIPE:
         return this.stripeProvider.processCreditCardPayment(paymentRequest);
       default:

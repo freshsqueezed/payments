@@ -1,1 +1,1 @@
-export * from './stripe';
+export { default as StripeProvider } from './stripe';
