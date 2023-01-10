@@ -20,7 +20,7 @@ export enum Providers {
 }
 
 export interface PaymentProviders {
-  stripe: StripeProvider;
+  stripe?: StripeProvider | undefined;
 }
 
 export interface PaymentRequest {
