@@ -14,8 +14,8 @@ export interface Gateway {
 export class PaymentGateway implements Gateway {
   stripeProvider: StripeProvider | undefined;
 
-  constructor({ stripe }: PaymentProviders) {
-    this.stripeProvider = stripe;
+  constructor(providers: PaymentProviders) {
+    this.stripeProvider = providers.stripe;
   }
 
   async processPayment(
